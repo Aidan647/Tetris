@@ -1,0 +1,36 @@
+{
+	"name": "tetris",
+	"version": "1.0.0",
+	"description": "Simple tetris game",
+	"private": true,
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "webpack --config production.config.js",
+		"watch": "webpack --watch"
+	},
+	"author": "Aidan647",
+	"license": "MIT",
+	"devDependencies": {
+		"@fiverr/afterbuild-webpack-plugin": "^1.0.0",
+		"@types/color": "^3.0.3",
+		"@types/keyboardjs": "^2.5.0",
+		"@types/p5": "^1.4.2",
+		"compression-webpack-plugin": "^10.0.0",
+		"css-loader": "^6.7.1",
+		"css-minimizer-webpack-plugin": "^4.0.0",
+		"html-minimizer-webpack-plugin": "^4.0.0",
+		"html-webpack-plugin": "^5.5.0",
+		"inline-scripts": "^1.7.4",
+		"mini-css-extract-plugin": "^2.6.0",
+		"style-loader": "^3.3.1",
+		"ts-loader": "^9.3.0",
+		"typescript": "^4.6.4",
+		"webpack": "^5.72.1",
+		"webpack-cli": "^4.9.2"
+	},
+	"dependencies": {
+		"color": "^4.2.3",
+		"keyboardjs": "^2.6.4",
+		"p5": "^1.4.1"
+	}
+}

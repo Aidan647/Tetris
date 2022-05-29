@@ -1,0 +1,66 @@
+/*
+background color: #232323;
+center main element
+main element min size 800x600
+position main in center
+*/
+
+body {
+	background-color: #232323;
+	margin: 0;
+	padding: 0;
+}
+
+/* main {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 1000px;
+	height: 900px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+} */
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 1000px;
+	height: 900px;
+
+	display: grid;
+	grid-template-columns: 600px 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"Tetris Next"
+		"Tetris Points";
+}
+
+.Tetris {
+	grid-area: Tetris;
+}
+
+.Points {
+	grid-area: Points;
+	/* set content to center */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Next {
+	grid-area: Next;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#score {
+	font-size: 30px;
+	color: #fff;
+	font-family: monospace;
+}
